@@ -1,5 +1,9 @@
 ![LangChain Academy](https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/66e9eba1020525eea7873f96_LCA-big-green%20(2).svg)
 
+# My version (fork) of the LangChain Academy repo
+
+I've made some changes that are described below.
+
 ## Introduction
 
 Welcome to LangChain Academy! 
@@ -21,6 +25,8 @@ python3 --version
 ```
 
 ### Clone repo
+
+**EDIT!** I'm using GitHub Codespaces for coding so I forked the repo below and created a codespace from it.
 ```
 git clone https://github.com/langchain-ai/langchain-academy.git
 $ cd langchain-academy
@@ -33,6 +39,10 @@ $ python3 -m venv lc-academy-env
 $ source lc-academy-env/bin/activate
 $ pip install -r requirements.txt
 ```
+**EDIT!** I don't think the last command is needed because the devcontainer.json file contains the following:
+
+	"postCreateCommand": "pip install jupyterlab && pip3 install --user -r requirements.txt",
+
 #### Windows Powershell
 ```
 PS> python3 -m venv lc-academy-env
@@ -50,6 +60,9 @@ $ jupyter notebook
 ### Setting up env variables
 Briefly going over how to set up environment variables. You can also 
 use a `.env` file with `python-dotenv` library.
+
+
+**EDIT!** Added API keys as secrets to my repo so they are accessible as env variables in the codespace.
 #### Mac/Linux/WSL
 ```
 $ export API_ENV_VAR="your-api-key-here"
